@@ -15,3 +15,22 @@ jobs:
         with:
           name: cv_current
           path: main.pdf
+      - name: commit current cv to repo
+        uses: actions/checkout@v2
+        with:
+          path: "./pathToRepo/"
+      - name: copy to repo
+        uses: canastro/copy-action@0.0.2
+        with:
+          source: main.pdf
+          target: ./pathToRepo/pdf/main.pdf
+      - name: commit to branch
+        with:
+          message: "commit current cv Version"
+          add: "*.pdf --force"
+          cwd: "./pathToRepo/"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}         
+          
+
+        
