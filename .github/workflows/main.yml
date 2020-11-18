@@ -18,12 +18,12 @@ jobs:
       - name: commit current cv to repo
         uses: actions/checkout@v2
         with:
-          path: "./pathToRepo/"
+          path: "/cv_commit_space/"
       - name: copy to repo
         uses: canastro/copy-action@0.0.2
         with:
           source: main.pdf
-          target: ./pathToRepo/pdf/main.pdf
+          target: /cv_commit_space/pdf/main.pdf
       - name: commit to branch
         uses: EndBug/add-and-commit@v5
         with:
