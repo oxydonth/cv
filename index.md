@@ -1,1 +1,1 @@
-<embed src="https://oxydonth.github.io/cv/pdf/main.pdf"/>
+<embed src="https://oxydonth.github.io/cv/pdf/main.pdf" width="100%" height="100%"/>
