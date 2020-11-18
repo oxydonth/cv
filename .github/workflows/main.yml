@@ -19,3 +19,15 @@ jobs:
         with:
           name: cv_current
           path: '*.pdf'
+      - name: commit cv files
+        uses: EndBug/add-and-commit@v5
+        with:
+          add: '*.pdf'
+          author_name: oxydonth
+          author_email: max.bielka@alumni.fh-aachen.de
+          branch: gh-pages
+          message: 'current cvs'
+          push: true
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged       
