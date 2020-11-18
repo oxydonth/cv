@@ -23,6 +23,8 @@ jobs:
           source_file: 'main.pdf'
           destination_repo: 'cv/gh-pages'
           destination_folder: 'pdf'
+          user_email: 'max.bielka@alumni.fh-aachen.de'
+          user_name: 'oxydonth'
           commit_message: 'Current cv commit'
 
      
