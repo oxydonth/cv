@@ -15,21 +15,14 @@ jobs:
         with:
           name: cv_current
           path: main.pdf
-      - name: checkout gh-pages branch
-        uses: actions/checkout@v2
-        with:
-          path: "/home/runner/work/cv/cv/cv_pdf_commit_space/"
-          ref: gh-pages
-      - name: copy to repo
-        uses: canastro/copy-action@0.0.2
-        with:
-          source: main.pdf
-          target: /home/runner/work/cv/cv/cv_pdf_commit_space/cv/pdf/main.pdf
-      - name: commit to branch
-        uses: EndBug/add-and-commit@v5
-        with:
-          message: "commit current cv Version"
-          add: "*.pdf --force"
-          cwd: "./pathToRepo/"
+      - name: Pushes test file
+        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'main.pdf'
+          destination_repo: 'cv/gh-pages'
+          destination_folder: 'pdf'
+          commit_message: 'Current cv commit'
+
+     
