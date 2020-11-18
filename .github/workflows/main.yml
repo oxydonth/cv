@@ -29,8 +29,3 @@ jobs:
           message: "commit current cv Version"
           add: "*.pdf --force"
           cwd: "./pathToRepo/"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}         
-          
-
-        
