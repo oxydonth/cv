@@ -15,10 +15,11 @@ jobs:
         with:
           name: cv_current
           path: main.pdf
-      - name: commit current cv to repo
+      - name: checkout gh-pages branch
         uses: actions/checkout@v2
         with:
           path: "/home/runner/work/cv/cv/cv_pdf_commit_space/"
+          repository: gh-pages
       - name: copy to repo
         uses: canastro/copy-action@0.0.2
         with:
