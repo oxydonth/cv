@@ -24,7 +24,7 @@ jobs:
         uses: canastro/copy-action@0.0.2
         with:
           source: main.pdf
-          target: /home/runner/work/cv/cv/cv_pdf_commit_space/pdf/main.pdf
+          target: /home/runner/work/cv/cv/cv_pdf_commit_space/cv/pdf/main.pdf
       - name: commit to branch
         uses: EndBug/add-and-commit@v5
         with:
