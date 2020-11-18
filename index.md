@@ -1,1 +1,1 @@
-<a href="pdf/main.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
+<embed src="https://oxydonth.github.io/pdf/main.pdf" width="100%" height="850px"/>
