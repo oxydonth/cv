@@ -1,9 +1,7 @@
-## Results {.tabset}
+cv_german
 
-### Tab One
+<embed src="https://oxydonth.github.io/cv/pdf/cv_ger.pdf" width="1024" height="768"/>
 
-<embed src="https://oxydonth.github.io/cv/pdf/main.pdf" width="1024" height="768"/>
+cv_english
 
-### Tab Two
-
-## {-}
+<embed src="https://oxydonth.github.io/cv/pdf/cv_eng.pdf" width="1024" height="768"/>
